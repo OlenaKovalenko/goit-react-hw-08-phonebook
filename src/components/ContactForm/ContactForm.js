@@ -3,8 +3,8 @@ import * as Yup from 'yup';
 import { toast } from 'react-hot-toast';
 import { BtnAddContact, ErrorMsg, FormLabel, StyledField, StyledForm } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts} from 'redux/selectors';
-import { addContact } from 'redux/operations';
+import { selectContacts} from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operations';
 
 const validationSchema = Yup.object().shape({
     name: Yup.string()
