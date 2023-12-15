@@ -6,19 +6,19 @@ import { Provider } from 'react-redux';
 import { App } from 'components/App/App';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'styles';
-import { store } from 'redux/store';
+import { persistor, store } from 'redux/store';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      {/* <PersistGate loading={null} persistor={persistor}> */}
+      <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
           <ThemeProvider theme={theme}>
             <App />
           </ThemeProvider>
         </BrowserRouter>
-      {/* </PersistGate> */}
+      </PersistGate>
     </Provider>
   </React.StrictMode>
 );
