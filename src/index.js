@@ -7,18 +7,22 @@ import { App } from 'components/App/App';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'styles';
 import { persistor, store } from 'redux/store';
+import { HelmetProvider } from 'react-helmet-async';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <PersistGate loading={null} persistor={persistor}>
-        <BrowserRouter basename='goit-react-hw-08-phonebook'>
-          <ThemeProvider theme={theme}>
-            <App />
-          </ThemeProvider>
-        </BrowserRouter>
+      <HelmetProvider>
+        <PersistGate loading={null} persistor={persistor}>
+          <BrowserRouter basename='goit-react-hw-08-phonebook'>
+            <ThemeProvider theme={theme}>
+              <App />
+            </ThemeProvider>
+          </BrowserRouter>
       </PersistGate>
+      </HelmetProvider>
+      
     </Provider>
   </React.StrictMode>
 );

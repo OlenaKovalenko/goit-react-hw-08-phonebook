@@ -22,7 +22,7 @@ const authSlice = createSlice({
         builder
             .addCase(register.fulfilled, handleFulfilled)
             .addCase(logIn.fulfilled, handleFulfilled)
-            .addCase(logOut.fulfilled, (state, { payload }) => {
+            .addCase(logOut.fulfilled, state => {
                 state.user = { name: null, email: null };
                 state.token = null;
                 state.isLoggedIn = false;
