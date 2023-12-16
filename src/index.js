@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { App } from 'components/App/App';
 import { ThemeProvider } from 'styled-components';
-import { theme } from 'styles';
+import { GlobalStyle, theme } from 'styles';
 import { persistor, store } from 'redux/store';
 import { HelmetProvider } from 'react-helmet-async';
 
@@ -19,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <ThemeProvider theme={theme}>
               <App />
             </ThemeProvider>
+            <GlobalStyle/>
           </BrowserRouter>
       </PersistGate>
       </HelmetProvider>
