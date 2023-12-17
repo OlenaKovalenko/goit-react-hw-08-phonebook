@@ -1,2 +1,2 @@
-// export * from 'styles/GlobalStyle';
-// export * from 'styles/Theme';
+export * from 'styles/GlobalStyle';
+export * from 'styles/Theme';

@@ -5,11 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { App } from 'components/App/App';
 import { ThemeProvider } from 'styled-components';
-// import { GlobalStyle, theme } from 'styles';
+import { GlobalStyle, theme } from 'styles';
 import { persistor, store } from 'redux/store';
 import { HelmetProvider } from 'react-helmet-async';
-import { GlobalStyle } from '../src/styles/GlobalStyle';
-import { theme } from '../src/styles/Theme';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
