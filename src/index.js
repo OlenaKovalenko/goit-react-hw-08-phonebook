@@ -5,9 +5,11 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { App } from 'components/App/App';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyle, theme } from 'styles';
+// import { GlobalStyle, theme } from 'styles';
 import { persistor, store } from 'redux/store';
 import { HelmetProvider } from 'react-helmet-async';
+import { GlobalStyle } from 'styles/GlobalStyle';
+import { theme } from 'styles/Theme';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -17,9 +19,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <PersistGate loading={null} persistor={persistor}>
           <BrowserRouter basename='goit-react-hw-08-phonebook'>
             <ThemeProvider theme={theme}>
+              <GlobalStyle/>
               <App />
             </ThemeProvider>
-            <GlobalStyle/>
           </BrowserRouter>
       </PersistGate>
       </HelmetProvider>
