@@ -8,8 +8,8 @@ import { ThemeProvider } from 'styled-components';
 // import { GlobalStyle, theme } from 'styles';
 import { persistor, store } from 'redux/store';
 import { HelmetProvider } from 'react-helmet-async';
-import { GlobalStyle } from 'styles/GlobalStyle';
-import { theme } from 'styles/Theme';
+import { GlobalStyle } from '../src/styles/GlobalStyle';
+import { theme } from '../src/styles/Theme';
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
