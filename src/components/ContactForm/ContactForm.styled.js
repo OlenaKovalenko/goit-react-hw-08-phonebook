@@ -14,7 +14,7 @@ export const StyledForm = styled(Form)`
 export const FormLabel = styled.label`
     text-align: start;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: ${p => p.theme.colors.black};
 
 `;

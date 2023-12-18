@@ -3,11 +3,9 @@ import styled from 'styled-components';
 
 export const AppContainer = styled.div`
     width: 600px;
-    margin: ${p => p.theme.spacing(15)} auto;
+    margin: ${p => p.theme.spacing(6)} auto;
     padding: ${p => p.theme.spacing(6)};
     background-color: transparent;
-    /* background-color: ${p => p.theme.colors.lightGrey}; */
-
     border-radius: ${p => p.theme.radii.lg};
     border: 1px solid ${p => p.theme.colors.grey};
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
