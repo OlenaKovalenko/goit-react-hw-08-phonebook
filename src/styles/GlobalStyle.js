@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
             sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background-image: url('img/phonebook1.jpg');
+        background-image: url('img/phonebook.jpg');
         background-color: #f0f0f0;
         background-size: cover;
         background-position: top left;
