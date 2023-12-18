@@ -5,9 +5,11 @@ export const AppContainer = styled.div`
     width: 600px;
     margin: ${p => p.theme.spacing(15)} auto;
     padding: ${p => p.theme.spacing(6)};
-    background-color: ${p => p.theme.colors.lightGrey};
+    background-color: transparent;
+    /* background-color: ${p => p.theme.colors.lightGrey}; */
+
     border-radius: ${p => p.theme.radii.lg};
-    border: none;
+    border: 1px solid ${p => p.theme.colors.grey};
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
         text-align: center;

@@ -22,7 +22,7 @@ const Contacts = () => {
         <>
             {isLoading && !error && <Loader />}
             <Helmet>
-                <title>Your tasks</title>
+                <title>Your contactss</title>
             </Helmet>
             <AppContainer>
         

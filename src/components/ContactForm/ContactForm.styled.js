@@ -2,8 +2,10 @@ import { Field, Form, ErrorMessage} from "formik";
 import styled from 'styled-components';
 
 export const StyledForm = styled(Form)`
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
     width: 400px;
     gap: ${p => p.theme.spacing(2)};
     margin-bottom: ${p => p.theme.spacing(8)};

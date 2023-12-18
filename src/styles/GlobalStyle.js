@@ -9,11 +9,12 @@ export const GlobalStyle = createGlobalStyle`
             sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        background-image: url('img/phonebook.jpg');
         background-size: cover;
-        background-position: center;
-        background-color: rgb(245, 222, 179);
-        background-image: url('/img/phonebook1.jpg');
-        overflow: hidden;
+        background-position: top right;
+        /* background-color: rgb(245, 222, 179); */
+        background-repeat: no-repeat;
+        /* overflow: hidden; */
     }
 
     code {
