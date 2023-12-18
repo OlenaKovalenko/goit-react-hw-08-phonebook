@@ -11,6 +11,8 @@ const HomePage = lazy(() => import('../../pages/Home'));
 const RegisterPage = lazy(() => import('../../pages/Register'));
 const LoginPage = lazy(() => import('../../pages/Login'));
 const ContactsPage = lazy(() => import('../../pages/Contacts'));
+const NotFoundPage = lazy(() => import('../../pages/NotFoundPage'));
+
 
 export const App = () => {
   const dispatch = useDispatch();
@@ -28,6 +30,7 @@ export const App = () => {
         <Route path='/register' element={<RestrictedRoute redirectTo='/contacts' component={<RegisterPage/>}/>}/>
         <Route path='/login' element={<RestrictedRoute redirectTo='/contacts' component={<LoginPage/>}/>}/>
         <Route path='/contacts' element={<PrivateRoute redirectTo='/login' component={<ContactsPage/>}/>}/>
+        <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
     );
