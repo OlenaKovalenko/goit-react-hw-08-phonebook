@@ -20,7 +20,6 @@ export const LoginForm = () => {
     return (
         <Formik
             initialValues={{
-                name: '',
                 email: '',
                 password: '',
             }}
