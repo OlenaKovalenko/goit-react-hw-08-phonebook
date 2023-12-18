@@ -5,7 +5,7 @@ export const AppContainer = styled.div`
     width: 600px;
     margin: ${p => p.theme.spacing(6)} auto;
     padding: ${p => p.theme.spacing(6)};
-    background-color: transparent;
+    background-color: #d3d3d3;
     border-radius: ${p => p.theme.radii.lg};
     border: 1px solid ${p => p.theme.colors.grey};
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),

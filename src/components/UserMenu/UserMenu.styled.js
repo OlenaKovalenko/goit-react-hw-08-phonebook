@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
 `;
 
 export const UserName = styled.p`
+    font-style: italic;
     font-size: 16px;
     font-weight: 700;
     color: ${p => p.theme.colors.black};
